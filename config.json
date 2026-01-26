@@ -1,0 +1,61 @@
+{
+  "project": {
+    "name": "Optilog Website",
+    "version": "2.0.0",
+    "description": "Professional website for Optilog IT solutions company",
+    "author": "Optilog Development Team",
+    "lastUpdated": "2026-01-26"
+  },
+  "structure": {
+    "pages": {
+      "home": "index.html",
+      "careers": "pages/careers.html",
+      "customers": "pages/customers.html"
+    },
+    "assets": {
+      "images": "assets/images/",
+      "scripts": "assets/js/",
+      "styles": "css/"
+    }
+  },
+  "dependencies": {
+    "fonts": [
+      "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    ],
+    "icons": [
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    ]
+  },
+  "seo": {
+    "defaultTitle": "Optilog — Premium IT & Mobile Solutions",
+    "defaultDescription": "Transform your business with premium IT solutions, mobile apps, and web platforms. Expert development team with 30+ years combined experience.",
+    "keywords": ["IT solutions", "mobile development", "web development", "software consulting", "digital transformation"],
+    "author": "Optilog",
+    "language": "en"
+  },
+  "contact": {
+    "email": "srampall@optilog.in",
+    "phone": "+1 (234) 567-8900",
+    "address": "123 Tech Street, Innovation City, TC 12345"
+  },
+  "social": {
+    "linkedin": "#",
+    "twitter": "#",
+    "github": "#",
+    "youtube": "#"
+  },
+  "maintenance": {
+    "cssComponents": [
+      "css/components/base.css",
+      "css/components/buttons.css"
+    ],
+    "jsModules": [
+      "assets/js/main.js"
+    ],
+    "criticalFiles": [
+      "index.html",
+      "css/main.css",
+      "assets/js/main.js"
+    ]
+  }
+}

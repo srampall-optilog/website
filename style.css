@@ -1,0 +1,264 @@
+/* ================= RESET & BASE ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #1d1d1f;
+  line-height: 1.7;
+}
+
+/* ================= LAYOUT ================= */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.container.narrow {
+  max-width: 820px;
+}
+
+/* ================= HEADER ================= */
+.header {
+  background: radial-gradient(circle at top left, #0b3c5d, #020617 60%);
+}
+
+.header-inner {
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* reduced gap */
+}
+
+.brand img {
+  height: 56px;
+}
+
+.brand span {
+  font-size: 26px;
+  font-weight: 500;
+  color: #e6f1ff;
+  letter-spacing: 0.6px;
+}
+
+nav a {
+  color: #c7d2fe;
+  text-decoration: none;
+  margin-left: 28px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, #0ea5e9, transparent 40%),
+    radial-gradient(circle at bottom left, #14b8a6, transparent 45%),
+    linear-gradient(135deg, #020617, #020617);
+  color: white;
+}
+
+
+/* Center graphic message */
+.hero-center {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-center h1 {
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+/* Lower content (revealed naturally on scroll) */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 20px 120px;
+  text-align: center;
+}
+
+.hero-sub {
+  max-width: 720px;
+  margin: auto;
+  font-size: 20px;
+  color: #e0f2fe;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.85;
+}
+
+.orb-1 {
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, #22d3ee, #0ea5e9);
+  top: -120px;
+  left: -120px;
+}
+
+.orb-2 {
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, #14b8a6, #0f766e);
+  bottom: -160px;
+  right: -140px;
+}
+
+.orb-3 {
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, #2dd4bf, #008080);
+  top: 35%;
+  left: 55%;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  padding: 130px 0;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 44px;
+  margin-bottom: 80px;
+}
+
+/* ================= WHAT WE DO ================= */
+.services-bg {
+  background:
+    radial-gradient(circle at top, #e0f2fe, transparent 60%),
+    linear-gradient(180deg, #ffffff, #f8fafc);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 44px;
+  flex-wrap: wrap;
+}
+
+.icon-card {
+  background: linear-gradient(180deg, #ffffff, #f1f5f9);
+  width: 270px;
+  padding: 42px 32px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 22px;
+}
+
+.icon-card h3 {
+  font-size: 22px;
+}
+
+.icon-card p {
+  margin-top: 10px;
+  color: #475569;
+}
+
+/* ================= FOUNDERS ================= */
+.founders-bg {
+  background:
+    radial-gradient(circle at top right, #fde68a, transparent 45%),
+    linear-gradient(180deg, #fffbeb, #fef3c7);
+}
+
+.founders {
+  display: flex;
+  gap: 42px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.founder-card {
+  background: linear-gradient(180deg, #ffffff, #fff7ed);
+  padding: 38px 32px;
+  width: 290px;
+  border-radius: 22px;
+  text-align: center;
+}
+
+.founder-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 18px;
+  border: 3px solid #e5e7eb;
+}
+
+.founder-card h3 {
+  font-size: 22px;
+}
+
+.meta {
+  color: #0284c7;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+/* ================= CONTACT ================= */
+.contact-bg {
+  background:
+    radial-gradient(circle at top left, #22d3ee, transparent 45%),
+    linear-gradient(135deg, #0284c7, #0f766e);
+  color: white;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  font-size: 19px;
+  color: #ecfeff;
+}
+
+.email {
+  display: inline-block;
+  margin-top: 32px;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: radial-gradient(circle at top, #020617, #000000);
+  color: #94a3b8;
+  text-align: center;
+  padding: 36px;
+  font-size: 14px;
+}
