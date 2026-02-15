@@ -1,0 +1,45 @@
+/* ================= PREMIUM HEADER ENHANCEMENT ================= */
+.header {
+  background: rgba(10, 15, 28, 0.95) !important;
+  backdrop-filter: blur(25px) !important;
+  border-bottom: 1px solid rgba(0, 128, 128, 0.2) !important;
+  box-shadow: 0 4px 20px rgba(0, 128, 128, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.header .brand span {
+  background: linear-gradient(135deg, #ffffff 0%, #2dd4bf 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-weight: 700 !important;
+  text-shadow: none !important;
+  filter: drop-shadow(0 2px 8px rgba(0, 128, 128, 0.3)) !important;
+}
+
+.header .desktop-nav a,
+.header .mobile-nav a {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s ease !important;
+}
+
+.header .desktop-nav a:hover,
+.header .mobile-nav a:hover {
+  color: #ffffff !important;
+  background: rgba(0, 128, 128, 0.15) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 15px rgba(0, 128, 128, 0.2) !important;
+}
+
+.header .contact-icon {
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.3s ease !important;
+}
+
+.header .contact-icon:hover {
+  color: #2dd4bf !important;
+  transform: scale(1.1) !important;
+  box-shadow: 0 4px 15px rgba(45, 212, 191, 0.3) !important;
+}

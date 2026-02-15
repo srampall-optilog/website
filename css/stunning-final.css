@@ -1,0 +1,170 @@
+/* ================= FINAL STUNNING ENHANCEMENTS ================= */
+
+/* Ensure all text elements follow dark theme */
+* {
+  box-sizing: border-box;
+}
+
+/* Testimonials Enhancement */
+.testimonial-small, .testimonials-compact .testimonial-small {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(0, 128, 128, 0.2) !important;
+  border-radius: 20px !important;
+  backdrop-filter: blur(15px) !important;
+  padding: 2rem !important;
+  box-shadow: 0 8px 25px rgba(0, 128, 128, 0.1) !important;
+}
+
+.testimonial-small p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1.1rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 1.5rem !important;
+  font-style: italic;
+}
+
+.testimonial-small .author {
+  color: #2dd4bf !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+}
+
+/* Services Enhancement */
+.services-simple .service-item {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 2px solid rgba(0, 128, 128, 0.2) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(20px) !important;
+  box-shadow: 0 8px 25px rgba(0, 128, 128, 0.1) !important;
+}
+
+.service-item h3 {
+  color: #ffffff !important;
+  font-size: 1.3rem !important;
+}
+
+.service-item p {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 1rem !important;
+}
+
+/* Contact Form Enhancement */
+.contact-form {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(0, 128, 128, 0.2) !important;
+  border-radius: 20px !important;
+  backdrop-filter: blur(25px) !important;
+  padding: 2.5rem !important;
+  box-shadow: 0 12px 35px rgba(0, 128, 128, 0.15) !important;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(0, 128, 128, 0.3) !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  padding: 1rem 1.5rem !important;
+  backdrop-filter: blur(10px) !important;
+  transition: all 0.3s ease !important;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgba(0, 128, 128, 0.6) !important;
+  box-shadow: 0 0 0 3px rgba(0, 128, 128, 0.1) !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+
+.contact-form label {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+  margin-bottom: 0.5rem !important;
+  display: block;
+}
+
+/* Footer Enhancement */
+.footer {
+  background: rgba(10, 15, 28, 0.95) !important;
+  border-top: 1px solid rgba(0, 128, 128, 0.2) !important;
+  backdrop-filter: blur(25px) !important;
+}
+
+.footer p, .footer span, .footer a {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.footer h3, .footer h4 {
+  color: #ffffff !important;
+}
+
+.footer a:hover {
+  color: #2dd4bf !important;
+  transition: color 0.3s ease !important;
+}
+
+/* Rating Stars */
+.rating i {
+  color: #fbbf24 !important;
+  font-size: 1rem !important;
+  margin-right: 0.2rem;
+}
+
+/* Mobile Menu Enhancement */
+.mobile-nav {
+  background: rgba(10, 15, 28, 0.98) !important;
+  backdrop-filter: blur(25px) !important;
+  border-top: 1px solid rgba(0, 128, 128, 0.2) !important;
+  box-shadow: 0 -4px 20px rgba(0, 128, 128, 0.1) !important;
+}
+
+/* Button Enhancements */
+.btn:not(.btn-primary-premium):not(.btn-secondary-premium) {
+  background: linear-gradient(135deg, #008080, #14b8a6) !important;
+  color: white !important;
+  border: 1px solid rgba(0, 128, 128, 0.3) !important;
+  box-shadow: 0 4px 15px rgba(0, 128, 128, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn:not(.btn-primary-premium):not(.btn-secondary-premium):hover {
+  background: linear-gradient(135deg, #0f766e, #008080) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(0, 128, 128, 0.3) !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 15, 28, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #008080, #2dd4bf);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+}
+
+/* Selection Styling */
+::selection {
+  background: rgba(0, 128, 128, 0.3);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: rgba(0, 128, 128, 0.3);
+  color: #ffffff;
+}

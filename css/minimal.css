@@ -32,8 +32,7 @@
   border: 1px solid rgba(20, 184, 166, 0.5);
   border-radius: var(--radius-2xl);
   padding: var(--space-sm) var(--space-lg);
-  margin-top: -24px;
-  margin-bottom: var(--space-md);
+  margin: -24px auto var(--space-md) auto;
   backdrop-filter: blur(20px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(20, 184, 166, 0.2);
   transition: all 0.3s ease;
@@ -224,6 +223,10 @@ body {
   padding: 0 var(--space-lg);
   position: relative;
   z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Hero Description */
@@ -603,6 +606,73 @@ body {
   border-radius: 4px;
   font-size: 0.7rem;
   font-weight: 500;
+}
+
+/* Innovative Avatar Styles */
+.member-avatar {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto var(--space-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.member-avatar:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.avatar-initials {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  letter-spacing: 1px;
+}
+
+.avatar-ring {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: rotate 3s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.member-avatar:hover .avatar-ring {
+  opacity: 1;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.ceo-avatar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.ceo-avatar:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+}
+
+.cto-avatar {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.cto-avatar:hover {
+  background: linear-gradient(135deg, #ed64a6 0%, #e53e3e 100%);
 }
 
 /* Section Background Variety */
